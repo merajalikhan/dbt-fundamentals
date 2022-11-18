@@ -28,8 +28,7 @@ final as (
         orders.order_date,
         coalesce(order_payments.amount,0) as amount
 
-    from orders
-    order by order_id
+    from orders    
 
     left join order_payments using (order_id)
 
