@@ -29,7 +29,7 @@ final as (
         coalesce(order_payments.amount,0) as amount
 
     from orders
-    order by order_id
+    --order by order_id
 
     left join order_payments using (order_id)
 
